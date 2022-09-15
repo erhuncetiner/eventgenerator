@@ -1,0 +1,4 @@
+-	Economy, of course. (+1 vote percentage nationwide for lower classes, -50 pp)
+-	Ideology is why people vote in the first place. (+50 pp)
+-	Let's keep our strategy balanced. (+0.25 vote percentage nationwide for lower classes, +20 pp)
+

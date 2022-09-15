@@ -6,15 +6,16 @@
 #include <iostream>
 #include <fstream>
 
+#include "game.h"
 using namespace std;
-class selector
+class selector 
 {
 	public:
 		int event_id;
 		string event_id_str;
-		selector();
+		selector(double &x, int &y);
 		void chooseEvent();
-		void showEvent();
+		void showEvent(double &x, int &y);
 	protected:
 };
 

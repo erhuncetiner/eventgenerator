@@ -6,15 +6,16 @@
 #include <iostream>
 #include <fstream>
 
+#include "game.h"
 using namespace std;
-class early_game
+class early_game 
 {
 	public:
 		int event_id;
 		string event_id_str;
-		early_game();
+		early_game(double &x, int &y);
 		void chooseEvent();
-		void showEvent();
+		void showEvent(double &x, int &y);
 	protected:
 };
 
