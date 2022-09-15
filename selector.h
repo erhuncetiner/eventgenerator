@@ -13,9 +13,9 @@ class selector
 	public:
 		int event_id;
 		string event_id_str;
-		selector(double &x, int &y);
+		selector(double &x, int &y, int &remainingEvents);
 		void chooseEvent();
-		void showEvent(double &x, int &y);
+		void showEvent(double &x, int &y, int &remainingEvents);
 	protected:
 };
 

@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=1
 CompilerSettings=0000000000000000001000000
-UnitCount=27
+UnitCount=29
 
 [VersionInfo]
 Major=1
@@ -292,6 +292,26 @@ BuildCmd=
 
 [Unit27]
 FileName=game.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit28]
+FileName=partySelector.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit29]
+FileName=partySelector.cpp
 CompileCpp=1
 Folder=
 Compile=1

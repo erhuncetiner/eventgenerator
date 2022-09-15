@@ -4,21 +4,21 @@
 #include <fstream>
 #include <string> 
 #include "game.h"
-selector::selector(double &x, int &y)
+selector::selector(double &x, int &y, int &remainingEvents)
 {
 //	remainingEvents = 5;
 //    cout << remainingEvents << endl;
 //	double vote = x;
 //	int pp = y;
 	chooseEvent();
-	showEvent(x, y);
+	showEvent(x, y, remainingEvents);
 }
 
 void selector::chooseEvent(){
 	event_id = rand()%5 + 1;
 }
 
-void selector::showEvent(double &x, int &y){
+void selector::showEvent(double &x, int &y, int &remainingEvents){
 	string eve, res ;
 	ifstream event;
 	ifstream response;
@@ -196,6 +196,7 @@ void selector::showEvent(double &x, int &y){
 }
 	cout << "Inside the class vote: " << x << endl;
 	cout << "Inside the class PP: " << y << endl;
+	remainingEvents = remainingEvents - 1;
 	response.close();
 //	x.remainingEvents = x.remainingEvents - 1;
 //    cout << "Remaining x: " << x.remainingEvents << endl;

@@ -9,7 +9,7 @@
 #include "game.h"
 #include "early_game.h"
 #include "selector.h"
-
+#include "partySelector.h"
 
 using namespace std;
 int main(){
@@ -30,12 +30,22 @@ int main(){
 //	early_game e2;
 //	int remainingEvents = 5;
 //	while (remainingEvents > 0){
-	double a = 1;
-	int b = 50;
+	partySelector yes;
+//	yes.chosen();
+////////////////////	while (yes.selectionDone == false){
+////////////////////		cout << "Choose a Party!" << endl;
+////////////////////		yes;
+////////////////////	}
+	double a = yes.initialVote;
+	int b = yes.initialPP;
+	int c = yes.remainingEvents;
 	cout << "Vote: " << a << endl;
 	cout << "Political Power: " << b << endl;
 //	cout << "Remaining Events:" << lmao.remainingEvents << endl;	
-	selector(a, b);
+while (c > 0){
+
+	selector(a, b, c);
+}
 //	selector();
 //	selector();
 //	selector();
