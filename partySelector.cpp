@@ -14,47 +14,52 @@ void partySelector::chosen(){
 	cin >> partyNumber;
 
 //	{
+if ((partyNumber > 0)&&(partyNumber < 9)){
 	
 	if (partyNumber == 1){
 		initialVote = 35;
 		initialPP = 75;
-		bool selectionDone = true;
+		selectionDone = 1;
 	}
 	else if (partyNumber == 2){
 		initialVote = 25;
 		initialPP = 75;
-		bool selectionDone = true;
+		selectionDone = 1;
 	}
 	else if (partyNumber == 3){
 		initialVote = 10;
 		initialPP = 50;
-		bool selectionDone = true;
+		selectionDone = 1;
 	}
 	else if (partyNumber == 4){
 		initialVote = 10;
 		initialPP = 50;
-		bool selectionDone = true;
+		selectionDone = 1;
 	}
 	else if (partyNumber == 5){
 		initialVote = 7;
 		initialPP = 50;
-		bool selectionDone = true;
+		selectionDone = 1;
 	}
 	else if (partyNumber == 6){
 		initialVote = 7;
 		initialPP = 30;
-		bool selectionDone = true;
+		selectionDone = 1;
 	}
 	else if (partyNumber == 7){
 		initialVote = 4;
 		initialPP = 30;
-		bool selectionDone = true;
+		selectionDone = 1;
 	}
 	else if (partyNumber == 8){
 		initialVote = 2;
 		initialPP = 30;
-		bool selectionDone = true;
+		selectionDone = 1;
 	}
+}
+else {
+	selectionDone = 0;
+}
 //	}
 //	{
 //	if ((partyNumber < 1)||(partyNumber > 8)){

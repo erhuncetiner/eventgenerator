@@ -32,10 +32,10 @@ int main(){
 //	while (remainingEvents > 0){
 	partySelector yes;
 //	yes.chosen();
-////////////////////	while (yes.selectionDone == false){
-////////////////////		cout << "Choose a Party!" << endl;
-////////////////////		yes;
-////////////////////	}
+	while (yes.selectionDone == 0){
+		cout << "Choose a Party!" << endl;
+		yes.chosen();
+		}
 	double a = yes.initialVote;
 	int b = yes.initialPP;
 	int c = yes.remainingEvents;
@@ -53,7 +53,7 @@ while (c > 0){
 	
 //	remainingEvents = 1;
 //	cout << "Remaining Events:" << remainingEvents << endl;
-	early_game(a, b);
+//	early_game(a, b);
 //	early_game();
 //	early_game();
 //	early_game();
